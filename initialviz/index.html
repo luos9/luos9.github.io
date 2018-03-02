@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Nation Data Visualization</title>
+
+    <!--bootstrap for styling-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--styling of legend-->
+    <style>
+        div.tooltip {   
+ 	        position: absolute;           
+	        text-align: center;           
+	        width: 120px;                  
+	        height: 40px;                 
+	        padding: 4px;             
+	        font: 13px;
+            font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;        
+	        background: white;   
+	        border: 0px;      
+	        border-radius: 8px;           
+	        pointer-events: none;         
+        }
+
+        path:hover {
+            fill-opacity: 0.65;
+        }
+        
+        .legend {
+            position: absolute;
+        }
+
+        p.class1 {
+            font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+
+        button.btn1 {
+            background-color:#2c7fb8;
+            float: left;
+            color: white;
+            padding: 5px 10px;
+            font-size: 13px;
+            font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+        }
+        .btn1:hover {
+            background-color: #5fa8d8;
+            color: white;
+        }
+        .feature {
+            fill: #ccc;
+            cursor: pointer;
+        }
+
+        .feature.active {
+            fill: orange;
+        }
+
+        .mesh {
+            fill: none;
+            stroke: #fff;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        
+        body{
+            width:1100px;
+            margin:10px auto;
+        }
+        path {  stroke: #fff; }
+        
+        rect:hover {  fill:blue; }
+        .axis {  font: 10px sans-serif; }
+        .legend tr{    border-bottom:1px solid grey; }
+        .legend tr:first-child{    border-top:1px solid grey; }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }   
+        .x.axis path {  display: none; }
+
+        .legend{
+            margin-bottom:76px;
+            display:inline-block;
+            border-collapse: collapse;
+            border-spacing: 0px;
+        }
+        .legend td{
+             padding:4px 5px;
+            vertical-align:bottom;
+        }
+        .legendFreq, .legendPerc{
+            align:right;
+            width:50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- content -->
+        <h1>Digital Nation Data Visualization</h1>
+        <p class="lead">State Level User Profile</p>
+
+        <!-- more html content can go here; e.g., any data explanation -->
+        <p class="class1">(click the selector or mouse over the map)</p>
+        <div id="visContainer">
+            <div class='btn-group'>
+                <button id="TotalConsumption" class="btn1">Laptop User</button>
+                <button id="BiomassConsumption" class="btn1">Mobile Phone User</button>
+                <button id="HydroConsumption" class="btn1">TV Box User</button>
+                <button id="CoalConsumption" class="btn1">Tablet User</button>
+                <button id="NatGasConsumption" class="btn1">Wearable Device User</button>
+                <button id="FossFuelConsumption" class="btn1">Internet User</button>
+            </div>
+        </div>
+        <p></p>
+        <div id='dashboard'></div>
+        <p></p>
+        <p class="class1" id="citation">Data from <a href="https://www.ntia.doc.gov/data/digital-nation-data-explorer">2015 US Census</a></p>
+    </div>
+
+    <!-- JavaScript modules -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="visualization.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

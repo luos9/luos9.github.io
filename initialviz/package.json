@@ -1,0 +1,14 @@
+{
+  "name": "a8-visualization",
+  "version": "1.0.0",
+  "description": "This repository contains an online, interactive visualization for a particular data set, created as part of an assignment for the [Introduction to Programming](https://canvas.uw.edu/courses/1139975) course at the UW iSchool.",
+  "main": "visualization.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^4.9.1"
+  }
+}
