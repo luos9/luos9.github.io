@@ -1,0 +1,590 @@
+var freqData = [{
+    State: 'AK',
+    freq: {
+        Biomass: 4178,
+        Coal: 14548,
+        ElecC: 21315,
+        FossFuel: 634777,
+        Geo: 153,
+        Hydro: 13982,
+        NatGas: 334978,
+        LPG: 1353
+    }
+}, {
+    State: 'AL',
+    freq: {
+        Biomass: 169088,
+        Coal: 718684,
+        ElecC: 310023,
+        FossFuel: 1785688,
+        Geo: 138,
+        Hydro: 84919,
+        NatGas: 544405,
+        LPG: 13088
+    }
+}, {
+    State: 'AR',
+    freq: {
+        Biomass: 94865,
+        Coal: 293689,
+        ElecC: 164439,
+        FossFuel: 909827,
+        Geo: 773,
+        Hydro: 35697,
+        NatGas: 274774,
+        LPG: 10016
+    }
+}, {
+    State: 'AZ',
+    freq: {
+        Biomass: 29289,
+        Coal: 457909,
+        ElecC: 248506,
+        FossFuel: 1292346,
+        Geo: 339,
+        Hydro: 64606,
+        NatGas: 336208,
+        LPG: 7838
+    }
+}, {
+    State: 'CA',
+    freq: {
+        Biomass: 28210,
+        Coal: 382623,
+        ElecC: 180555,
+        FossFuel: 1370758,
+        Geo: 721,
+        Hydro: 15398,
+        NatGas: 510877,
+        LPG: 16395
+    }
+}, {
+    State: 'CO',
+    freq: {
+        Biomass: 28210,
+        Coal: 382623,
+        ElecC: 180555,
+        FossFuel: 1370758,
+        Geo: 721,
+        Hydro: 15398,
+        NatGas: 510877,
+        LPG: 16395
+    }
+}, {
+    State: 'CT',
+    freq: {
+        Biomass: 35716,
+        Coal: 28711,
+        ElecC: 103697,
+        FossFuel: 562060,
+        Geo: 20,
+        Hydro: 3811,
+        NatGas: 203814,
+        LPG: 9425
+    }
+}, {
+    State: 'DE',
+    freq: {
+        Biomass: 6901,
+        Coal: 30253,
+        ElecC: 39599,
+        FossFuel: 171414,
+        Geo: 414,
+        Hydro: 0,
+        NatGas: 56087,
+        LPG: 5323
+    }
+}, {
+    State: 'FL',
+    freq: {
+        Biomass: 246789,
+        Coal: 637416,
+        ElecC: 788887,
+        FossFuel: 3491560,
+        Geo: 9516,
+        Hydro: 1731,
+        NatGas: 1180462,
+        LPG: 20915
+    }
+}, {
+    State: 'GA',
+    freq: {
+        Biomass: 204742,
+        Coal: 767906,
+        ElecC: 479971,
+        FossFuel: 2324200,
+        Geo: 300,
+        Hydro: 32407,
+        NatGas: 541691,
+        LPG: 22767
+    }
+}, {
+    State: 'HI',
+    freq: {
+        Biomass: 10448,
+        Coal: 17117,
+        ElecC: 34176,
+        FossFuel: 259018,
+        Geo: 1964,
+        Hydro: 687,
+        NatGas: 2732,
+        LPG: 3155
+    }
+}, {
+    State: 'IA',
+    freq: {
+        Biomass: 239261,
+        Coal: 493794,
+        ElecC: 155059,
+        FossFuel: 1187456,
+        Geo: 1170,
+        Hydro: 9250,
+        NatGas: 312941,
+        LPG: 66062
+    }
+}, {
+    State: 'ID',
+    freq: {
+        Biomass: 33561,
+        Coal: 8527,
+        ElecC: 77786,
+        FossFuel: 250946,
+        Geo: 2120,
+        Hydro: 89309,
+        NatGas: 85075,
+        LPG: 5268
+    }
+}, {
+    State: 'IL',
+    freq: {
+        Biomass: 147792,
+        Coal: 1069037,
+        ElecC: 493923,
+        FossFuel: 3225698,
+        Geo: 1965,
+        Hydro: 1157,
+        NatGas: 974412,
+        LPG: 71671
+    }
+}, {
+    State: 'KS',
+    freq: {
+        Biomass: 39348,
+        Coal: 359908,
+        ElecC: 137915,
+        FossFuel: 997849,
+        Geo: 906,
+        Hydro: 129,
+        NatGas: 280413,
+        LPG: 12277
+    }
+}, {
+    State: 'KY',
+    freq: {
+        Biomass: 51017,
+        Coal: 1009823,
+        ElecC: 319259,
+        FossFuel: 1874296,
+        Geo: 2544,
+        Hydro: 25173,
+        NatGas: 239062,
+        LPG: 33939
+    }
+}, {
+    State: 'LA',
+    freq: {
+        Biomass: 112227,
+        Coal: 259750,
+        ElecC: 290292,
+        FossFuel: 3974821,
+        Geo: 1708,
+        Hydro: 10817,
+        NatGas: 1483201,
+        LPG: 489633
+    }
+}, {
+    State: 'MA',
+    freq: {
+        Biomass: 59866,
+        Coal: 83850,
+        ElecC: 194905,
+        FossFuel: 1107941,
+        Geo: 764,
+        Hydro: 9720,
+        NatGas: 447429,
+        LPG: 9140
+    }
+}, {
+    State: 'MD',
+    freq: {
+        Biomass: 51683,
+        Coal: 266067,
+        ElecC: 222925,
+        FossFuel: 963419,
+        Geo: 548,
+        Hydro: 16267,
+        NatGas: 217744,
+        LPG: 13030
+    }
+}, {
+    State: 'ME',
+    freq: {
+        Biomass: 114477,
+        Coal: 2279,
+        ElecC: 39346,
+        FossFuel: 277354,
+        Geo: 70,
+        Hydro: 37174,
+        NatGas: 80988,
+        LPG: 10859
+    }
+}, {
+    State: 'MI',
+    freq: {
+        Biomass: 129422,
+        Coal: 749285,
+        ElecC: 353651,
+        FossFuel: 2305457,
+        Geo: 4898,
+        Hydro: 12200,
+        NatGas: 758696,
+        LPG: 41696
+    }
+}, {
+    State: 'MN',
+    freq: {
+        Biomass: 163181,
+        Coal: 315438,
+        ElecC: 231333,
+        FossFuel: 1337325,
+        Geo: 1035,
+        Hydro: 8199,
+        NatGas: 427198,
+        LPG: 30431
+    }
+}, {
+    State: 'MO',
+    freq: {
+        Biomass: 69261,
+        Coal: 801625,
+        ElecC: 293722,
+        FossFuel: 1721620,
+        Geo: 339,
+        Hydro: 15018,
+        NatGas: 282141,
+        LPG: 28861
+    }
+}, {
+    State: 'MS',
+    freq: {
+        Biomass: 71310,
+        Coal: 148463,
+        ElecC: 169533,
+        FossFuel: 999309,
+        Geo: 855,
+        Hydro: 0,
+        NatGas: 444875,
+        LPG: 11899
+    }
+}, {
+    State: 'MT',
+    freq: {
+        Biomass: 14644,
+        Coal: 203339,
+        ElecC: 46988,
+        FossFuel: 447231,
+        Geo: 279,
+        Hydro: 91849,
+        NatGas: 72888,
+        LPG: 9000
+    }
+}, {
+    State: 'NC',
+    freq: {
+        Biomass: 134325,
+        Coal: 749091,
+        ElecC: 465448,
+        FossFuel: 1869784,
+        Geo: 931,
+        Hydro: 46405,
+        NatGas: 308710,
+        LPG: 47840
+    }
+}, {
+    State: 'ND',
+    freq: {
+        Biomass: 25305,
+        Coal: 409684,
+        ElecC: 44207,
+        FossFuel: 622237,
+        Geo: 906,
+        Hydro: 19923,
+        NatGas: 70046,
+        LPG: 9541
+    }
+}, {
+    State: 'NE',
+    freq: {
+        Biomass: 109887,
+        Coal: 254552,
+        ElecC: 101846,
+        FossFuel: 666348,
+        Geo: 1151,
+        Hydro: 12818,
+        NatGas: 169620,
+        LPG: 12111
+    }
+}, {
+    State: 'NH',
+    freq: {
+        Biomass: 33502,
+        Coal: 33827,
+        ElecC: 37157,
+        FossFuel: 242475,
+        Geo: 28,
+        Hydro: 14415,
+        NatGas: 62612,
+        LPG: 12029
+    }
+}, {
+    State: 'NJ',
+    freq: {
+        Biomass: 64370,
+        Coal: 71961,
+        ElecC: 270160,
+        FossFuel: 1772767,
+        Geo: 448,
+        Hydro: 177,
+        NatGas: 671474,
+        LPG: 8532
+    }
+}, {
+    State: 'NM',
+    freq: {
+        Biomass: 17663,
+        Coal: 267474,
+        ElecC: 76526,
+        FossFuel: 737539,
+        Geo: 324,
+        Hydro: 2117,
+        NatGas: 246201,
+        LPG: 8501
+    }
+}, {
+    State: 'NV',
+    freq: {
+        Biomass: 9739,
+        Coal: 80228,
+        ElecC: 115232,
+        FossFuel: 577325,
+        Geo: 21631,
+        Hydro: 21047,
+        NatGas: 267808,
+        LPG: 4409
+    }
+}, {
+    State: 'NY',
+    freq: {
+        Biomass: 120168,
+        Coal: 167094,
+        ElecC: 493456,
+        FossFuel: 2733286,
+        Geo: 1070,
+        Hydro: 248502,
+        NatGas: 1224485,
+        LPG: 31093
+    }
+}, {
+    State: 'OH',
+    freq: {
+        Biomass: 110645,
+        Coal: 1355137,
+        ElecC: 525944,
+        FossFuel: 3304252,
+        Geo: 3241,
+        Hydro: 4186,
+        NatGas: 810958,
+        LPG: 29374
+    }
+}, {
+    State: 'OK',
+    freq: {
+        Biomass: 39320,
+        Coal: 346047,
+        ElecC: 197370,
+        FossFuel: 1571983,
+        Geo: 23,
+        Hydro: 27403,
+        NatGas: 697351,
+        LPG: 11435
+    }
+}, {
+    State: 'OR',
+    freq: {
+        Biomass: 59498,
+        Coal: 42556,
+        ElecC: 157041,
+        FossFuel: 628380,
+        Geo: 1114,
+        Hydro: 297970,
+        NatGas: 242914,
+        LPG: 5956
+    }
+}, {
+    State: 'PA',
+    freq: {
+        Biomass: 132240,
+        Coal: 1310670,
+        ElecC: 508265,
+        FossFuel: 3469617,
+        Geo: 2018,
+        Hydro: 22753,
+        NatGas: 909263,
+        LPG: 55261
+    }
+}, {
+    State: 'RI',
+    freq: {
+        Biomass: 6691,
+        Coal: 0,
+        ElecC: 26611,
+        FossFuel: 184732,
+        Geo: 20,
+        Hydro: 36,
+        NatGas: 95710,
+        LPG: 1342
+    }
+}, {
+    State: 'SC',
+    freq: {
+        Biomass: 101716,
+        Coal: 404966,
+        ElecC: 281419,
+        FossFuel: 1124533,
+        Geo: 624,
+        Hydro: 23185,
+        NatGas: 225961,
+        LPG: 11209
+    }
+}, {
+    State: 'SD',
+    freq: {
+        Biomass: 63943,
+        Coal: 39061,
+        ElecC: 38747,
+        FossFuel: 226232,
+        Geo: 1716,
+        Hydro: 51110,
+        NatGas: 72926,
+        LPG: 7707
+    }
+}, {
+    State: 'TN',
+    freq: {
+        Biomass: 91516,
+        Coal: 515464,
+        ElecC: 353215,
+        FossFuel: 1461432,
+        Geo: 205,
+        Hydro: 79392,
+        NatGas: 263365,
+        LPG: 14037
+    }
+}, {
+    State: 'TX',
+    freq: {
+        Biomass: 179840,
+        Coal: 1568060,
+        ElecC: 1223057,
+        FossFuel: 10741110,
+        Geo: 2316,
+        Hydro: 12310,
+        NatGas: 3689583,
+        LPG: 1425319
+    }
+}, {
+    State: 'UT',
+    freq: {
+        Biomass: 7712,
+        Coal: 356148,
+        ElecC: 95686,
+        FossFuel: 847682,
+        Geo: 3449,
+        Hydro: 6785,
+        NatGas: 229078,
+        LPG: 4050
+    }
+}, {
+    State: 'VA',
+    freq: {
+        Biomass: 119506,
+        Coal: 346161,
+        ElecC: 388307,
+        FossFuel: 1535604,
+        Geo: 1569,
+        Hydro: 14636,
+        NatGas: 385931,
+        LPG: 21572
+    }
+}, {
+    State: 'VT',
+    freq: {
+        Biomass: 19041,
+        Coal: 0,
+        ElecC: 19090,
+        FossFuel: 90299,
+        Geo: 28,
+        Hydro: 13140,
+        NatGas: 8502,
+        LPG: 9018
+    }
+}, {
+    State: 'WA',
+    freq: {
+        Biomass: 115340,
+        Coal: 94934,
+        ElecC: 308376,
+        FossFuel: 1115899,
+        Geo: 1013,
+        Hydro: 666221,
+        NatGas: 294871,
+        LPG: 15836
+    }
+}, {
+    State: 'WI',
+    freq: {
+        Biomass: 137892,
+        Coal: 458442,
+        ElecC: 234583,
+        FossFuel: 1361165,
+        Geo: 592,
+        Hydro: 20603,
+        NatGas: 376627,
+        LPG: 32179
+    }
+}, {
+    State: 'WV',
+    freq: {
+        Biomass: 25598,
+        Coal: 848129,
+        ElecC: 109293,
+        FossFuel: 1165405,
+        Geo: 31,
+        Hydro: 13340,
+        NatGas: 121780,
+        LPG: 4636
+    }
+}, {
+    State: 'WY',
+    freq: {
+        Biomass: 3330,
+        Coal: 484239,
+        ElecC: 58391,
+        FossFuel: 805265,
+        Geo: 598,
+        Hydro: 9989,
+        NatGas: 154759,
+        LPG: 5226
+    }
+}];
+dashboard('#dashboard', freqData);

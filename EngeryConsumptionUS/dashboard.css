@@ -1,0 +1,83 @@
+#title1 {
+    font: 20px sans-serif;
+    margin: 0px;
+}
+
+#title2 {
+    font: 20px sans-serif;
+}
+
+#title3 {
+    font: 20px sans-serif;
+}
+
+body {
+    width: 1300px;
+    margin: 5px;
+    border-top: 5px;
+}
+
+path {
+    stroke: #fff;
+}
+
+path:hover {
+    opacity: 0.9;
+}
+
+rect:hover {
+    fill: #B22222;
+}
+
+.axis {
+    font: 8px sans-serif;
+}
+
+.legend tr {
+    border-bottom: 1px solid grey;
+}
+
+.legend tr:first-child {
+    border-top: 1px solid grey;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.legend {
+    position: relative;
+    display: inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.legend td {
+    padding: 4px 5px;
+    vertical-align: bottom;
+}
+
+.legend tr {
+    font: 10px sans-serif;
+}
+
+.legendFreq,
+.legendPerc {
+    align: right;
+    width: 30px;
+}
+
+.bar text {
+    font: 5px sans-serif;
+}
+
+.svg g {
+    position: center;
+}
